@@ -2,6 +2,12 @@
 
 Initial setup.
 
+## Install curl on Debian
+
+```bash
+sudo apt update && sudo apt install -y curl
+```
+
 ## Install key on a new VPS
 
 ```bash
