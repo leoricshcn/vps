@@ -20,6 +20,12 @@ curl -fsSL https://raw.githubusercontent.com/leoricshcn/vps/main/install_key.sh 
 curl -fsSL https://raw.githubusercontent.com/leoricshcn/vps/main/install233.sh -o install233.sh && bash install233.sh
 ```
 
+## Install a private key
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/leoricshcn/vps/main/install_pk.sh -o install_pk.sh && bash install_pk.sh /path/to/private/key id_ed25519
+```
+
 ## Install Nginx reverse proxy
 
 ```bash
