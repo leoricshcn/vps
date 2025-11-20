@@ -33,3 +33,11 @@ curl -fsSL https://raw.githubusercontent.com/leoricshcn/vps/main/install_nginx_r
 ```
 
 Set the `DOMAIN`, `TARGET`, or `LISTEN_PORT` environment variables before running if you need non-default values, otherwise the script will prompt for the domain and use `http://127.0.0.1:3000` on port `80`.
+
+## Install Portainer
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/leoricshcn/vps/main/install_portainer.sh -o install_portainer.sh && sudo bash install_portainer.sh
+```
+
+The script installs Docker (if missing) and runs the Portainer CE container on ports `9443` (HTTPS UI) and `8000` (edge agent) by default. Override `PORTAINER_HTTPS_PORT`, `PORTAINER_EDGE_PORT`, `PORTAINER_CONTAINER_NAME`, or `PORTAINER_IMAGE` to customize the deployment.
