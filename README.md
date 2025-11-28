@@ -25,6 +25,12 @@ curl -fsSL https://raw.githubusercontent.com/leoricshcn/vps/main/install233.sh -
 ```bash
 curl -fsSL https://raw.githubusercontent.com/leoricshcn/vps/main/install_pk.sh -o install_pk.sh && bash install_pk.sh /path/to/private/key id_ed25519
 ```
+## Install openai codex cli
+
+```bash
+npm i -g @openai/codex
+```
+copy ~/.codex/auth.json on headless server
 
 ## Install Nginx reverse proxy
 
