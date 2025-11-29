@@ -36,7 +36,25 @@ curl -fsSL https://raw.githubusercontent.com/leoricshcn/vps/main/install_pk.sh -
 ```bash
 npm i -g @openai/codex
 ```
-copy ~/.codex/auth.json on headless server
+copy ~/.codex/auth.json to headless server
+
+or create a port mapping
+```bash
+ssh -N -L 127.0.0.1:1455:127.0.0.1:1455 root@<vps>
+```
+For wsl login, run 
+
+```bash
+hostname -I
+```
+to get ip address of wsl eg. 10.0.0.7
+
+use powershell admin to map localhost 1455 port to wsl 1455 port
+
+```ps
+netsh interface portproxy add v4tov4 listenport=1455 listenaddress=0.0.0.0 connectport=1455 connectaddress=10.0.0.7
+netsh interface portproxy show all
+```
 
 ## Install Nginx reverse proxy
 
