@@ -8,6 +8,12 @@ Initial setup.
 sudo apt update && sudo apt install -y curl
 ```
 
+## Install mosh
+
+```bash
+sudo apt install -y mosh
+```
+
 ## Install key on a new VPS
 
 ```bash
