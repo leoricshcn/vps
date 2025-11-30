@@ -29,7 +29,7 @@ curl -fsSL https://raw.githubusercontent.com/leoricshcn/vps/main/install233.sh -
 ## Install a private key
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/leoricshcn/vps/main/install_pk.sh -o install_pk.sh && bash install_pk.sh /path/to/private/key id_ed25519
+curl -fsSL https://raw.githubusercontent.com/leoricshcn/vps/main/install_pk.sh -o install_pk.sh && bash install_pk.sh ./id_ed25519 id_ed25519
 ```
 ## Install openai codex cli
 
