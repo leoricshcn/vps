@@ -38,6 +38,10 @@ npm i -g @openai/codex
 ```
 copy ~/.codex/auth.json to headless server
 
+```bash
+scp .\auth.json root@<vpsaddress>:/root
+```
+
 or create a port mapping
 ```bash
 ssh -N -L 127.0.0.1:1455:127.0.0.1:1455 root@<vps>
@@ -49,7 +53,7 @@ hostname -I
 ```
 to get ip address of wsl eg. 10.0.0.7
 
-use powershell admin to map localhost 1455 port to wsl 1455 port
+use powershell (not windows powershell) admin to map localhost 1455 port to wsl 1455 port
 
 ```ps
 netsh interface portproxy add v4tov4 listenport=1455 listenaddress=0.0.0.0 connectport=1455 connectaddress=10.0.0.7
