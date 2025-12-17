@@ -3,8 +3,18 @@
 ```bash
 tmux list-panes -a
 ```
+# list sessions
 
-#send and execute commands in pane
+```bash
+tmux list-sessions
+```
+# list windows
+
+```bash
+tmux list-windows
+```
+
+# send and execute commands in pane
 ```bash
 tmux send-keys -t %9 'execute command.txt' 'Enter'
 tmux send-keys -t %9 'and write results into response.txt' 'Enter'
